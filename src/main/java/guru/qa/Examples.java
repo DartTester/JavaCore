@@ -2,6 +2,11 @@ package guru.qa;
 
 public class Examples {
     public static void main(String[] args) {
+        examples();
+        ifElse();
+        compareOperator();
+    }
+    public static void examples() {
 //      String — строковые переменные, не представляют собой примитивы и хранят в себе целые строки.
         String name = "Daniil";
         System.out.println("example of String: " + "Привет, " + name);
@@ -67,5 +72,26 @@ public class Examples {
         int min2 = -2000000000;
         int minResult = min1 + min2;
         System.out.println("overflow min: " + minResult);
+    }
+    public static void ifElse() {
+        int m = 10;
+        int n = 20;
+        if (m > -10 || n >= 1) {
+            System.out.println(m + n);
+        } else if (m < -10 || n >= 5) {
+            System.out.println(m * n);
+        } else {
+            System.out.println("Повторите ввод");
+        }
+    }
+    public static void compareOperator() {
+        int o = 10;
+        int p = 20;
+        System.out.println("o == p = " + (o == p));
+        System.out.println("o != p = " + (o != p));
+        System.out.println("o > p = " + (o > p));
+        System.out.println("o < p = " + (o < p));
+        System.out.println("p >= o = " + (p >= o));
+        System.out.println("p <= o = " + (p <= o));
     }
 }

@@ -76,9 +76,9 @@ public class Examples {
     public static void ifElse() {
         int m = 10;
         int n = 20;
-        if (m > -10 || n >= 1) {
+        if (m > -10 && n >= 21) {
             System.out.println(m + n);
-        } else if (m < -10 || n >= 5) {
+        } else if (m < -10 || n == 5) {
             System.out.println(m * n);
         } else {
             System.out.println("Повторите ввод");

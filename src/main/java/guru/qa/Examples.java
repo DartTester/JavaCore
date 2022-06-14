@@ -55,11 +55,17 @@ public class Examples {
         System.out.println("example of boolean: " + ex2);
         System.out.println("example of boolean: " + ex3);
 
+//      массив
+        int[] arr = new int[] {1, 2, 3};
+
 //      вычисления комбинаций типов данных (int и double)
-        System.out.println("int plus double equals " + ((14 + 1.5) * 3));
+        System.out.println("int plus double multiply int equals " + ((14 + 1.5) * 3));
+
+//      вычисления комбинаций типов данных (double и double)
+        System.out.println("double plus double equals " + (2.35 + 1.58));
 
 //      вычисления комбинаций типов данных (int и long)
-        System.out.println("int plus long equals " + ((44444 + 5000000000000000000L) / 2));
+        System.out.println("int plus long divide by two equals " + ((44444 + 5000000000000000000L) / 2));
 
 //      переполнение в max сторону
         int max1 = 1500000000;
@@ -73,6 +79,7 @@ public class Examples {
         int minResult = min1 + min2;
         System.out.println("overflow min: " + minResult);
     }
+//    Управляющая конструкция (оператор ветвления if else) и логические операторы && ||
     public static void ifElse() {
         int m = 10;
         int n = 20;
@@ -83,11 +90,17 @@ public class Examples {
         } else {
             System.out.println("Повторите ввод");
         }
+//      всегда используем двойной && воизбежание ошибок
+        String str = null;
+        if (str != null && str.length() == 3) {
+            System.out.println(str);
+        }
     }
+//    Операторы сравнения
     public static void compareOperator() {
         int o = 10;
         int p = 20;
-        System.out.println("o == p = " + (o == p));
+        System.out.println("o == p = " + !(o == p)); // логический оператор ! перед выражением инвертирует результат
         System.out.println("o != p = " + (o != p));
         System.out.println("o > p = " + (o > p));
         System.out.println("o < p = " + (o < p));
@@ -95,3 +108,4 @@ public class Examples {
         System.out.println("p <= o = " + (p <= o));
     }
 }
+

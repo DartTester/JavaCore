@@ -50,5 +50,22 @@ public class Examples {
         System.out.println("example of boolean: " + ex2);
         System.out.println("example of boolean: " + ex3);
 
+//      вычисления комбинаций типов данных (int и double)
+        System.out.println("int plus double equals " + ((14 + 1.5) * 3));
+
+//      вычисления комбинаций типов данных (int и long)
+        System.out.println("int plus long equals " + ((44444 + 5000000000000000000L) / 2));
+
+//      переполнение в max сторону
+        int max1 = 1500000000;
+        int max2 = 2000000000;
+        int maxResult = max1 + max2;
+        System.out.println("overflow max: " + maxResult);
+
+//      переполнение в min сторону
+        int min1 = -1500000000;
+        int min2 = -2000000000;
+        int minResult = min1 + min2;
+        System.out.println("overflow min: " + minResult);
     }
 }
